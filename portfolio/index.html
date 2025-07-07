@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imran_s_h_a_i_k</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <form method="POST" action="contact.php">
+
+   <div id="nav1"></div>
+  <div id="overview">
+    <h1 class="logo">PORTFOLIO</h1>
+    <div id="navbar">
+      <ul>
+        <li><a href="#nav1" id="HOME">HOME</a></li>
+        <li><a href="#nav2" id="ABOUT">ABOUT</a></li>
+        <li><a href="#nav3" id="SKILLS">SKILLS</a></li>
+        <li><a href="#nav4" id="RESUME">RESUME</a></li>
+        <li><a href="#nav5" id="CERTIFICATES">CERTIFICATES</a></li>
+        <li><a href="#nav6" id="PROJECTS">PROJECTS</a></li>
+        <li><a href="contact.html" id="CONTACT">CONTACT</a></li>
+
+      </ul>
+    </div>
+  </div>
+   <section>
+  <div class="aboutMe">
+    <h2 id="its">Hello, it's me</h2>
+    <h1>Imran Shaik</h1>
+    <h2>
+      <span style="font-size: 32px; color: aliceblue;">And I'm a </span>
+      <span id="developer" class="typing-text"></span>
+    </h2>
+    <div class="about">
+      Hi! I’m a tech enthusiast, creative coder, and future AI engineer.<br>
+I enjoy turning ideas into real-world projects, whether it’s a sleek<br> website or an AI-powered app 
+Currently pursuing my B.Tech in CSE (AI & ML)<br> at VVIT.
+I believe in staying focused, learning continuously,
+ and building cool<br>
+  things that matter.
+
+    </p>
+    </div>
+  </div>
+  <script>
+  const roles = ["full stack developer", "Software Engineer"];
+  let roleIndex = 0;
+  let charIndex = 0;
+  const developerSpan = document.getElementById("developer");
+
+  function typeText() {
+    if (charIndex <= roles[roleIndex].length) {
+      developerSpan.textContent = roles[roleIndex].slice(0, charIndex++);
+      setTimeout(typeText, 100);
+    } else {
+      setTimeout(eraseText, 2000); // Pause before erasing
+    }
+  }
+
+  function eraseText() {
+    if (charIndex >= 0) {
+      developerSpan.textContent = roles[roleIndex].slice(0, charIndex--);
+      setTimeout(eraseText, 60);
+    } else {
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(typeText, 400);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeText);
+</script>
+</section>
+
+<div id="social">
+  <a href="https://leetcode.com/problemset/" target="_blank"><i class='bx bx-code-alt' title="LeetCode"></i></a>
+  <a href="https://www.codewars.com/users/Imran0458" target="_blank"><i class='bx bxl-codepen' title="CodeWars"></i></a>
+  <a href="https://github.com/Imran-shaik" target="_blank"><i class='bx bxl-github' title="GitHub"></i></a>
+  <a href="https://www.linkedin.com/in/shaik-imran-843a57269/" target="_blank"><i class='bx bxl-linkedin-square' title="LinkedIn"></i></a>
+  <a href="https://twitter.com/imran_shaik_1996/" target="_blank"><i class='bx bxl-twitter' title="Twitter"></i></a>
+  <a href="mailto:imranshaik0458@gmail.com"><i class='bx bxl-gmail' title="Gmail"></i></a>
+  <a href="https://www.instagram.com/imran_s_h_a_i_k/?hl=en" target="_blank"><i class="bx bxl-instagram" title="Instagram"></i></a>
+  <a href="https://www.facebook.com/imran.shaik.54584" target="_blank"><i class='bx bxl-facebook-square' title="Facebook"></i></a>
+</div>   
+    
+  </div>
+<br>
+<img id="photo" src="imran.jpg" alt="Imran Shaik Profile Picture">
+<div id="nav2"></div>
+<div class="aboutme">
+  <h1 class="about-title">ABOUT <span class="highlight">ME</span></h1>
+  <div class="badge">🚀 Full Stack Developer</div>
+  <p>
+    I am a passionate Full Stack Developer with a knack for building responsive, scalable, and user-friendly websites and applications. My journey began with front-end technologies like HTML, CSS, and JavaScript, and expanded into back-end development using Python and database handling.
+  </p>
+
+  <p>
+    I thrive on solving complex problems, love bringing ideas to life through clean code, and always seek to stay updated with the latest tech trends. Whether working solo or collaborating in a team, I value good communication, fast iteration, and meaningful impact.
+  </p>
+</div>
+ <div id="nav3"></div>
+<h1 class="skills-title">MY <span class="highlight" style="color: rgb(0, 181, 253);">SKILLS</span></h1>
+
+<section class="ts">
+  <div class="container1" id="skills">
+    <div class="bar bar1"><i class='bx bxl-html5'></i><p>HTML</p></div>
+    <div class="bar bar2"><i class='bx bxl-css3'></i><p>CSS</p></div>
+    <div class="bar bar3"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
+    <div class="bar bar4"><i class='bx bxl-python'></i><p>Python</p></div>
+    <div class="bar bar5"><i class='bx bxl-java'></i><p>Java</p></div>
+    <div class="bar bar6"><i class='bx bxl-react'></i><p>React</p></div>
+    <div class="bar bar7"><i class='bx bxl-nodejs'></i><p>Node.js</p></div>
+    <div class="bar bar8"><i class='bx bxl-git'></i><p>Git</p></div>
+    <div class="bar bar9"><i class='bx bxl-mongodb'></i><p>MongoDB</p></div>
+    <div class="bar bar10"><i class='bx bxl-django'></i><p>Django</p></div>
+    <div class="bar bar11"><i class='bx bxl-postgresql'></i><p>SQL</p></div>
+    <div class="bar bar12"><i class='bx bxl-figma'></i><p>Figma</p></div>
+  </div>
+</section>
+
+
+
+  
+<h1 class="skills-title">  MY PROFESSIONAL <span class="highlight" style="color: rgb(0, 181, 253);">   SKILLS</span></h1>
+
+<div class="chart-container">
+
+  <!-- Creativity -->
+  <div class="radial-bar">
+    <svg width="200" height="200">
+      <circle class="path" cx="100" cy="100" r="80" />
+      <circle class="progress-bar1" cx="100" cy="100" r="80" />
+    </svg>
+    <div class="center-content">
+      <div class="percentage">75%</div>
+      <div class="label">Creativity</div>
+    </div>
+  </div>
+
+  <!-- Problem-solving -->
+  <div class="radial-bar">
+    <svg width="200" height="200">
+      <circle class="path" cx="100" cy="100" r="80" />
+      <circle class="progress-bar2" cx="100" cy="100" r="80" />
+    </svg>
+    <div class="center-content">
+      <div class="percentage">55%</div>
+      <div class="label">Problem-solving</div>
+    </div>
+  </div>
+
+  <!-- Teamwork -->
+  <div class="radial-bar">
+    <svg width="200" height="200">
+      <circle class="path" cx="100" cy="100" r="80" />
+      <circle class="progress-bar3" cx="100" cy="100" r="80" />
+    </svg>
+    <div class="center-content">
+      <div class="percentage">60%</div>
+      <div class="label">Teamwork</div>
+    </div>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="radial-bar">
+    <svg width="200" height="200">
+      <circle class="path" cx="100" cy="100" r="80" />
+      <circle class="progress-bar4" cx="100" cy="100" r="80" />
+    </svg>
+    <div class="center-content">
+      <div class="percentage">60%</div>
+      <div class="label">Technical Skills</div>
+    </div>
+  </div>
+  <!-- Communication -->
+  <div class="radial-bar">
+  <svg width="200" height="200">
+    <circle class="path" cx="100" cy="100" r="80" />
+    <circle class="progress-bar5" cx="100" cy="100" r="80" />
+  </svg>
+  <div class="center-content">
+    <div class="percentage">70%</div>
+    <div class="label">Communication</div>
+  </div>
+</div>
+</div>
+</div>
+<div>
+  <div id="nav4"></div>
+<section class="resume-container">
+  <h1 class="resume-title">
+    My <span class="highlight">Resume</span>
+  </h1>
+
+  <a href="resume.pdf" target="_blank" class="resume-preview-link">
+    <img src="resume-preview.png" alt="Resume Preview" class="resume-preview-image" />
+  </a>
+
+  <a href="resume.pdf" download class="resume-download-btn">
+    <i class='bx bxs-file-pdf'></i> Download Resume🚀
+  </a>
+</section>
+</div>
+<div id="nav5"></div>
+</div><h1 class="skills-title">MY <span class="highlight" style="color: rgb(0, 181, 253);">CERTIFICATE'S</span></h1>
+
+<section class="certificates">
+  <div class="certificate-container">
+    <!-- Certificate 1 -->
+    <div class="certificate">
+      <img src="juniper1.png" alt="Certificate 1">
+      <p class="cert-title">Juniper</p>
+      <p class="cert-issuer">Issued by Eduskills</p>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate">
+      <img src="g-l.png" alt="Certificate 2">
+      <p class="cert-title">FutureSkills Prime</p>
+      <p class="cert-issuer">Issued by Accenture</p>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="certificate">
+      <img src="9.png" alt="Certificate 3">
+      <p class="cert-title">FutureSkills Prime</p>
+      <p class="cert-issuer">Issued by Accenture</p>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="certificate">
+      <img src="8.png" alt="Certificate 4">
+      <p class="cert-title">FutureSkills Prime</p>
+      <p class="cert-issuer">Issued by Accenture</p>
+    </div>
+
+    <!-- Certificate 5 -->
+    <div class="certificate">
+      <img src="AI&ml.png" alt="Certificate 5">
+      <p class="cert-title">Internship</p>
+      <p class="cert-issuer">Issued by Google via AICTE</p>
+    </div>
+
+    <!-- Certificate 6 -->
+    <div class="certificate">
+      <img src="longtream.png" alt="Certificate 6">
+      <p class="cert-title">Internship</p>
+      <p class="cert-issuer">Long-Term Internship (240 hrs) in Juniper Networking 
+        & Google AI-ML through EduSkills & APSCHE.</p>
+  </div>
+</section>
+
+<!-- === Projects Section === -->
+ <div id="nav6"></div>
+<section  class="projects-section">
+  <h1 class="projects-heading">MY <span class="highlight">PROJECTS</span></h1>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="portfolio.jpg" alt="Portfolio Project">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio built with HTML, CSS & JS.</p>
+      <div class="project-links">
+        <a href="https://your-live-portfolio-link.com" target="_blank" class="project-btn">LIVE</a>
+        <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-btn">GITHUB</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="weather-.webp" alt="Weather App">
+      <h3>Weather App</h3>
+      <p>Real-time weather using OpenWeather API.</p>
+      <div class="project-links">
+        <a href="weather.html" target="_blank" class="project-btn">LIVE</a>
+        <a href="https://github.com/yourusername/weather-app" target="_blank" class="project-btn">GITHUB</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="to-do-list.webp" alt="To-Do List">
+      <h3>To-Do List</h3>
+      <p>Manage daily tasks with JS local storage.</p>
+      <div class="project-links">
+        <a href="weather.html" target="_blank" class="project-btn">LIVE</a>
+        <a href="https://github.com/yourusername/todo-list" target="_blank" class="project-btn">GITHUB</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="call-to-action">
+  <h2>Want to collaborate or have a project in mind?</h2>
+  <a href="contact.html" class="contact-btn">Contact Me</a>
+</div>
+
+<footer class="footer">
+  <p>Contact: +91 9391680458 | imranshaik0458@gmail.com</p>
+  <div class="social-icons">
+    <a href="mailto:imranshaik0458@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+     <a href="https://github.com/Imran-shaik" target="_blank"><i class='bx bxl-github' title="GitHub"></i></a>
+  <a href="https://www.linkedin.com/in/shaik-imran-843a57269/" target="_blank"><i class='bx bxl-linkedin-square' title="LinkedIn"></i></a>
+    <a href="//www.instagram.com/imran_s_h_a_i_k/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://twitter.com/imran_shaik_1996/" target="_blank"><i class='bx bxl-twitter' title="Twitter"></i></a>
+    
+  </div>
+  <p>&copy; Developed by IMRAN SHAIK</p>
+</footer>
+
+
+
+</html>
+</body>
+</html> 
